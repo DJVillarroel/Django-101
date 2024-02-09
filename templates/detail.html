@@ -1,0 +1,13 @@
+{% extends "base.html" %}
+
+{% block title %}
+    <title>Details</title>
+{% endblock %}
+
+{% block body %}
+    <div class="col-sm-4 offset-4">
+        <a href="{% url 'feed:index' %}" class="btn btn-primary offset-4">Back to home</a>
+        <img src="{{object.img.url }}" class="rounded m-3 img-fluid">
+        <h1 class="offset-4">{{object.text}}</h1>
+    </div>
+{% endblock %}
